@@ -1,0 +1,54 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:text="🔴 Desconectado"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:text="Conectar Bluetooth"/>
+
+    <TextView
+        android:id="@+id/txtUmidade"
+        android:text="Umidade: 0%"/>
+
+    <ProgressBar
+        android:id="@+id/barUmidade"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:text="Temperatura: 0°C"/>
+
+    <Button android:id="@+id/btnLuzOn" android:text="Ligar Luz"/>
+    <Button android:id="@+id/btnLuzOff" android:text="Desligar Luz"/>
+
+    <Button android:id="@+id/btnBombaAuto" android:text="Auto Umidade"/>
+    <Button android:id="@+id/btnTempAuto" android:text="Auto Temperatura"/>
+
+    <EditText
+        android:id="@+id/inputUmidade"
+        android:hint="Umidade mínima (%)"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/inputTemp"
+        android:hint="Temperatura máxima (°C)"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnConfig"
+        android:text="Salvar Configuração"/>
+
+</LinearLayout>
+</ScrollView>
